@@ -9,17 +9,6 @@
 - Производится агрегация данных.
 - С агрегированными данными производится перенос в ClickHouse для дальнейшего анализа.
 
-## Структура проекта
-
-/home/doodhust/sourse/ecom_pipeline
-├── app/
-│   ├── __init__.py                # Инициализация пакета
-│   ├── generate_sales.py           # Генерация данных о продажах
-│   ├── load_postgres.py            # Загрузка данных в PostgreSQL
-│   └── transfer_to_clickhouse.py   # Перенос данных в ClickHouse
-└── dags/
-    └── sales_data_processing.py     # DAG для Apache Airflow
-
 ## Основные компоненты
 
 1. **Генерация данных (generate_sales.py)**:
